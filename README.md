@@ -1,14 +1,22 @@
-# Sound Transmisson Class With Not RT60
-* How to use
-* Note: SPL = Sound Pressure Level, TL = Transmission Loss
-1. Input SPL, Source(s) and Receiver(r) at 125 - 4000kHz 1/3 Octave In class StcCalculator
-    ```python
-    stc = StcCalculator(s, r) # Example
-    ```
-2. Use Method test_value to find Result STC and STC graph 
-    * Rules totalsum at 125-4000kHZ <= 32 and each Hz <= 8: = Result STC
-    * In addition to this Not pass
+# Sound Transmission Class (STC)
 
-3. Use Method show_stc for pass Reults
+A Python tool for calculating **Sound Transmission Class (STC)** according to ASTM E413 standard.  
+This project helps analyze the acoustic performance of partition materials based on measured **Sound Transmission Loss (STL)** data.
 
-#### As I am a beginner, I would like to receive feedback to help me further develop myself. Thank you.
+---
+
+## Features
+- Calculate **STC rating** from Transmission Loss (TL) values.
+- Support for **ASTM E413 standard** calculation.
+- Plot TL vs frequency curve with STC contour line.
+- Easy-to-use function for quick calculation and visualization.
+
+---
+
+## Installation
+Clone this repository and install the required packages:
+
+```bash
+git clone https://github.com/OASU2406/SoundTransmissionClass.git
+cd SoundTransmissionClass
+pip install -r requirements.txt
